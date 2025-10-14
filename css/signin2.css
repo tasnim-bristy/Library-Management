@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img{
+    background-image: url(../images/bg.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    position:absolute;
+    background-size: cover;
+    background-position: center;
+    background-position-y:100px ;
+}
+
+.logo img{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.login form{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    flex-direction: column;
+    gap: 45px;
+    background-color: #fff;
+    width: 700px;
+    height: 490px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.login h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(108, 47, 3);
+}
+
+.login .log-g a{
+    text-decoration: none;
+    color: rgb(91, 87, 76);
+    background-color: rgb(246, 211, 106);
+    border: 1px solid rgb(91, 87, 76);
+    border-radius: 5px;
+    padding: 15px 40px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.login .log-g a i{
+    font-size: 18px;
+    padding-right: 10px;
+    color: #000;
+}
+
+.login .log-a a{
+    text-decoration: none;
+    color: rgb(91, 87, 76);
+    border: 1px solid rgb(91, 87, 76);
+    border-radius: 5px;
+    padding: 15px 45px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+.login .log-a a i{
+    font-size: 22px;
+    padding-right: 10px;
+    color: #000;
+}
+
+.login .log-e a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(71, 35, 9);
+    border: 1px solid rgb(91, 87, 76);
+    border-radius: 5px;
+    padding: 15px 55px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+.login p{
+    font-size: 15px;
+    opacity: 0.8;
+    font-family: "Roboto";
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(91, 87, 76);
+}
+
+.login a{
+    color: rgb(17, 139, 94);
+    text-decoration: none;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+
+.login h4{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+}

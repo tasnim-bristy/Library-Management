@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lora","Roboto";
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* logo start */
+.logo{
+    background-color: rgb(247, 232, 214);
+    
+}
+
+.logo img{
+    width: 200px;
+    margin: 20px 0px 20px 200px;
+}
+
+/* logo end */
+
+/* banner start */
+.header{
+    margin-bottom: 100px;
+}
+
+.banner{
+    background-color: rgb(246, 211, 106);
+    height: 380px;
+}
+
+.banner-content{
+    display: flex;
+    gap: 90px;
+}
+
+.banner-title h1{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Lora";
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+.banner-title span{
+    font-style: italic;
+}
+
+.btn{
+    padding: 15px 25px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.banner-img img{
+    width: 160px;
+    margin-top: 20px;
+}
+
+.login form{
+    display: flex;
+    position: absolute;
+    bottom: 190px;
+    left: 950px;
+    flex-direction: column;
+    gap: 45px;
+    background-color: #fff;
+    width: 370px;
+    height: 470px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.login h3{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: rgb(108, 47, 3);
+}
+
+.login .log-g a{
+    text-decoration: none;
+    color: rgb(91, 87, 76);
+    background-color: rgb(246, 211, 106);
+    border: 1px solid rgb(91, 87, 76);
+    border-radius: 5px;
+    padding: 15px 30px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.login .log-g a i{
+    font-size: 18px;
+    padding-right: 10px;
+    color: #000;
+}
+
+.login .log-a a{
+    text-decoration: none;
+    color: rgb(91, 87, 76);
+    border: 1px solid rgb(91, 87, 76);
+    border-radius: 5px;
+    padding: 15px 38px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+.login .log-a a i{
+    font-size: 22px;
+    padding-right: 10px;
+    color: #000;
+}
+
+.login .log-e a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(71, 35, 9);
+    border: 1px solid rgb(91, 87, 76);
+    border-radius: 5px;
+    padding: 15px 55px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+.login p{
+    font-size: 15px;
+    opacity: 0.8;
+    font-family: "Roboto";
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(91, 87, 76);
+}
+
+.login a{
+    color: rgb(17, 139, 94);
+    text-decoration: none;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+
+.login h4{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.banner-text{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.text h4{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.text p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* banner end */
+
+
+/* main start */
+.main{
+    display: flex;
+}
+
+.left-side{
+    max-width: 1000px;
+    max-height: 1000px;
+}
+.discover{
+    background-color: rgb(236, 231, 231);
+    border: none;
+    border-radius: 16px;
+    width: 700px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.discover h5{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+    opacity: 0.9;
+}
+.books-top, .books-bottom p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+.books .p{
+    font-size: 15px;
+    padding: 50px 10px;
+
+}
+
+.dis-part{
+    display: flex;
+
+}
+.books{
+    display: flex;
+    gap: 5px;
+    
+}
+
+.book-img{
+    display: flex;
+    gap: 5px;
+}
+
+.books .imgs{
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+    box-shadow: 0x 5px 30px 0px;
+}
+.dis-book{
+    padding-left: 40px;
+}
+
+.search{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search h4{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.search-bar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    align-items: left;
+    border-radius: 5px;
+}
+
+.search-bar input{
+    width: 400px;
+    height: 50px;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 6px 35px 6px 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px gray;
+}
+
+input:focus{
+    outline: none;
+}
+
+.search-btn button{
+    position: relative;
+    width: 50px;
+    top: -32px;
+    left: 350px;
+    height: 100%;
+    border-radius: 40%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+
+.search-btn button i{
+    color: rgb(93, 94, 95);
+    
+}
+
+.search-btn button:hover i{
+    color: rgb(162, 163, 163);
+}
+
+.book-list{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.list a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: rgb(17, 139, 94);
+    padding-bottom: 5px;
+}
+
+.list a:hover{
+    text-decoration: underline;
+}
+
+/* main end */
+
+/* right side */
+.right-side{
+    width: 26%;
+    height: auto;
+    margin: 30px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.news a{
+    color: rgb(17, 139, 94);
+    width: 330px;
+    font-family: "Lora";
+    
+}
+.news a:link{
+    text-decoration: none;
+    
+
+}
+.news a:hover{
+    text-decoration: underline;
+}
+
+.news img{
+    height: 200px;
+    width: 323px;
+}
+.lovelist{
+    width: 98%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.right-side h4{
+    font-size: 21px;
+    font-weight: 400;
+
+}
+
+.books-con{
+    padding-top: 5px;
+}
+
+.books-con a{
+    color: rgb(17, 139, 94);
+    padding-right: 10px;
+    font-size: 15px;
+
+}
+.books-con a:link{
+    text-decoration: none;
+}
+.books-con a:hover{
+    text-decoration: underline;
+}
+hr{
+    opacity: 0.3;
+}
+
+.books-con p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10px;
+    opacity: 0.7;
+    padding-top: 5px;
+}
+
+.lists{
+    display: flex;
+}
+.book-img{
+    display: flex;
+    gap: 5px;
+    
+}
+.book-img img{
+    width: 30px;
+    height: 50px;
+    
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.author h4{
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.author p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.btn-2{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.btn-2 .btn1{
+    width: 115px;
+    height: 30px;
+    background-color: rgb(241, 224, 212);
+    border: 1px solid rgb(211, 162, 127);
+    border-radius: 8px;
+    opacity: 0.9;
+    font-weight: 400;
+    transition: all 0.5s;
+
+}
+.btn-2 .btn1:hover{
+    background-color: rgb(244, 215, 195);
+}
+.btn-2 .btn2{
+    width: 85px;
+    height: 30px;
+    background-color: rgb(241, 224, 212);
+    border: 1px solid rgb(211, 162, 127);
+    border-radius: 8px;
+    opacity: 0.9;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+.btn-2 .btn2:hover{
+    background-color: rgb(244, 215, 195);
+}
+
+/* right side end */
+
+/* footer start */
+.footer{
+    background-color: rgb(239, 241, 234);
+    height: 300px;
+}
+
+.footer-main{
+    display: flex;
+    gap: 80px;
+    padding-top: 30px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content h5{
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(91, 87, 76);
+    padding-bottom: 10px;
+}
+
+.footer-content a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+.footer-contact h5{
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(91, 87, 76);
+    padding-bottom: 10px;
+}
+
+.footer-contact a i{
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(91, 87, 76);
+    padding-top: 12px;
+    padding-left: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.copy{
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+/* footer end */

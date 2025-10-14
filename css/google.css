@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: "Roboto";
+}
+
+.container{
+    margin-left: 550px;
+}
+
+.signin img{
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.signin form h2{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    font-family: "Roboto";
+}
+
+.signin form{
+    background-color: #fff;
+    width: 370px;
+    height: 300px;
+    border: 1px solid rgb(217, 216, 216);
+    border-radius: 5px;
+}
+
+.signin form h5{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto";
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+.signin form input[type="email"]{
+    padding: 10px 130px 10px 2px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 5px;
+    font-family: "Roboto";
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.btn [type="button"]{
+    padding: 8px 130px;
+    background-color: rgb(241, 218, 69);
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    transition: all 0.3s;
+}
+
+.btn [type="button"]:hover{
+    background-color: rgb(221, 199, 59);
+    cursor: pointer;
+}
+
+.signin form p{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.signin a{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: rgb(69, 130, 148);
+    text-decoration: none;
+}
+
+.signin a:hover{
+    text-decoration: underline;
+}
+
+.border{
+    border-top: 1px solid rgb(217, 216, 216);
+    margin: 100px 200px 100px 200px;
+}
+
+.s-bottom{
+    margin-top: 100px;
+    margin-left: 650px;
+    display: flex;
+    gap: 40px;
+}
+
+.copy{
+    margin-top: 30px;
+    margin-left:690px;
+}

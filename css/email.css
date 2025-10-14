@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* email start */
+.email{
+    text-align: center;
+}
+
+.logo img{
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.email h3{
+    font-size: 45px;
+    font-family: "Lora";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.email form p{
+    font-size: 18px;
+    font-family: "Roboto";
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 580px;
+}
+
+.email form h6{
+    font-size: 18px;
+    font-family: "Roboto";
+    opacity: 0.5;
+    padding-bottom: 10px;
+}
+
+.email form h6 i{
+    padding-right: 5px;
+}
+
+.email form input{
+    padding: 10px 170px 10px 8px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.btn{
+    padding: 10px 120px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+}
+
+.email p{
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 80px;
+    padding-left: 580px;
+}
+
+.email a{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.email a:hover{
+    text-decoration: underline;
+}
+
+.e-bottom a{
+    font-size:16px;
+    padding-left: 10px;
+}
+
+.copy p{
+    font-size: 16px;
+    padding-top: 20px;
+    opacity: 0.7;
+    padding-left: 700px;
+}
