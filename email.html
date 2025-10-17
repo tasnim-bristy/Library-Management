@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest Registration</title>
-    <!-- fab icon -->
-    <link rel="shortcut icon" href="images/apple logo.png" type="image/x-icon">
-    <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- style css -->
-     <link rel="stylesheet" href="css/email.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNest Create Account</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- fab icon -->
+   
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- style CSS -->
+  <link rel="stylesheet" href="./css/email.css">
 </head>
-<body>
-    <section class="email">
-        <div class="email-log">
-            <div class="logo">
-            <img src="images/logo library.png" alt="">
-        </div>
-        <h3>Create Account</h3>
-        <form action="">
-            <p>Your Name</p>
-            <input type="text" name="" id="" placeholder="First and last name">
-            <p>Email</p>
-            <input type="email" name="" id="">
-            <p>Password</p>
-            <input type="password" name="" id="" placeholder="At least 6 characters">
-            <h6><i class="fa-solid fa-circle-info"></i>Password must be at least 6 characters</h6>
-            <p>Re-enter Password</p>
-            <input type="password" name="" id="">
-        </form>
-        <button class="btn">Create account</button>
-        <p>By creating an account, you agree to the<br> BookNest <a href="#">Terms of Service</a> and <a href="#">Privacy<br> Policy</a></p>
-        <p>Already have an account? <a href="#">Sign in</a></p>
-        <div class="e-bottom">
-            <a href="#">Terms of service</a>
-            <a href="#"> Privacy</a>
-            <a href="#"> Help</a>
-        </div>
-         <div class="copy">
-                <p>&copy;2025 BookNest</p>
-            </div>
-        </div>
-    </section>
+<body class="bg-white flex flex-col items-center justify-center min-h-screen text-[#1a1a1a]">
+  
+  <section class="w-full max-w-md p-6">
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="images/logo library.png" alt="BookNest Logo" class="w-28">
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-3xl font-semibold font-['Merriweather'] text-center mb-6">Create Account</h2>
+
+    <!-- Form -->
+    <form class="space-y-5">
+      <div>
+        <label class="block text-sm font-medium mb-1">Your name</label>
+        <input type="text" placeholder="First and last name" class="w-full border border-gray-400 rounded-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-700">
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" class="w-full border border-gray-400 rounded-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-700">
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Password</label>
+        <input type="password" placeholder="At least 6 characters" class="w-full border border-gray-400 rounded-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-700">
+        <p class="text-sm text-gray-600 mt-1"><i class="fa-solid fa-circle-info mr-1"></i>Passwords must be at least 6 characters.</p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Re-enter password</label>
+        <input type="password" class="w-full border border-gray-400 rounded-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-gray-700">
+      </div>
+
+      <button type="button" class="w-full bg-[#1a1a1a] text-white font-medium py-2 rounded-full mt-4 hover:bg-black transition-all">Create account</button>
+    </form>
+
+    <!-- Terms -->
+    <p class="text-sm text-center mt-6">
+      By creating an account, you agree to the<br>
+      BookNest <a href="#" class="underline hover:text-black">Terms of Service</a> and 
+      <a href="#" class="underline hover:text-black">Privacy Policy</a>.
+    </p>
+
+    <p class="text-sm text-center mt-4">
+      Already have an account? <a href="#" class="underline hover:text-black">Sign in</a>
+    </p>
+
+    <!-- Footer -->
+    <div class="flex justify-center space-x-4 text-sm mt-10 text-gray-700">
+      <a href="#" class="hover:underline">Terms of Service</a>
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Help</a>
+    </div>
+
+    <p class="text-xs text-center text-gray-600 mt-4">&copy; 2025 BookNest</p>
+  </section>
+
 </body>
 </html>
