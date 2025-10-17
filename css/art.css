@@ -1,141 +1,63 @@
- @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body { font-family: 'Roboto', sans-serif; }
+
+/* Navbar link hover */
+.navbar a {
+  transition: all 0.3s;
+}
+.navbar a:hover {
+  background-color: rgb(71, 35, 9);
+  color: #fff;
+  padding: 20px;
+  height: 70px;
 }
 
-.logo img{
-    width: 160px;
+/* Dropdown */
+.dropdown-button {
+  padding: 10px 20px;
+  background-color: rgb(247, 232, 214);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
 }
-
-.header{
-    background-color: rgb(247, 232, 214);
-    height: 70px;
+.dropdown-button i {
+  transition: transform 0.3s;
 }
+.dropdown-button.open i { transform: rotate(180deg); }
 
- .navbar{
-    display: flex;
-    max-width: 1200px;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
- }
-
- .navbar a{
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 600px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 10;
+}
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
   text-decoration: none;
   color: #000;
-  font-size: 16px;
-  font-family: "Roboto";
-  font-weight: 400;
-  transition: all 0.5s;
- }
-
- .navbar a:hover{
-  background-color: rgb(71, 35, 9);
-  height: 70px;
-  padding: 20px 20px;
-  color: #fff;
- }
- 
- .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .book-list{
-        display: flex;
-        font-family: "Roboto";
-    }
-
-    .dropdown-button {
-      padding: 10px 20px;
-      background-color: rgb(247, 232, 214);
-      color: #000;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 16px;
-      font-family: "Roboto";
-      font-weight: 400;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .dropdown-button i {
-      transition: transform 0.3s ease;
-    }
-
-    .dropdown-button.open i {
-      transform: rotate(180deg);
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      min-width: 600px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 5px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-
-    .show {
-      display: block;
-    }
-
-
-.search-bar{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 50px;
-    align-items: left;
-    border-radius: 5px;
 }
+.dropdown-content a:hover { background-color: #f1f1f1; }
+.show { display: block; }
 
-.search-bar input{
-    width: 400px;
-    height: 40px;
-    display: block;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 0px 35px 0px 10px;
-    border: 1px solid rgb(91, 87, 76);
+/* Search bar */
+.search-bar input {
+  border-radius: 5px;
+  border: 1px solid rgb(91,87,76);
+  padding-right: 3rem;
 }
-
-
-.search-btn button{
-    position: relative;
-    width: 50px;
-    top: -32px;
-    left: 350px;
-    height: 100%;
-    border-radius: 40%;
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-size: 18px;
+.search-btn button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(93,94,95);
 }
-
-
-.search-btn button i{
-    color: rgb(93, 94, 95);
-    
-}
-
-.search-btn button:hover i{
-    color: rgb(162, 163, 163);
-}
+.search-btn button:hover { color: rgb(162,163,163); }

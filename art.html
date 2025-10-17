@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Books</title>
-    <!-- fab icon -->
-     <link rel="shortcut icon" href="images/apple logo.png" type="image/x-icon">
-     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- style css -->
-      <link rel="stylesheet" href="css/art.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Books</title>
+  <link rel="shortcut icon" href="images/apple logo.png" type="image/x-icon">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/art.css">
 </head>
-<body>
-    <header class="header">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo library.png" alt="">
-            </div>
-            <a href="index.html">Home</a>
-            <a href="signin2.html">My Books</a>
-            <div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropdown-button">Browse <i class="fa-solid fa-chevron-down"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                <div class="book-list">
-                    <div class="list">
-                        <a href="#">Art</a>
-                        <a href="#">Biography</a>
-                        <a href="#">Business</a>
-                        <a href="#">Children's</a>
-                        <a href="#">Classics</a>
-                        <a href="#">Comics</a>
-                        <a href="#">Cookbooks</a>
-                        <a href="#">Ebooks</a>
-                    </div>
-                    <div class="list">
-                        <a href="#">Fantasy</a>
-                        <a href="#">Fiction</a>
-                        <a href="#">Graphic Novels</a>
-                        <a href="#">Historical Fiction</a>
-                        <a href="#">History</a>
-                        <a href="#">Horror</a>
-                        <a href="#">Memoir</a>
-                        <a href="#">Music</a>
-                    </div>
-                    <div class="list">
-                        <a href="#">Mystery</a>
-                        <a href="#">Nonfiction</a>
-                        <a href="#">Poetry</a>
-                        <a href="#">Psychology</a>
-                        <a href="#">Romance</a>
-                        <a href="#">Science</a>
-                        <a href="#">Science Fiction</a>
-                        <a href="#">Self Help</a>
-                        </div>
-                    <div class="list">
-                        <a href="#">Sports</a>
-                        <a href="#">Thriller</a>
-                        <a href="#">Travel</a>
-                        <a href="#">More genres</a>
-                    </div>
-            </div>
-                </div>
-            </div>
-            <div class="search">
-                <form class="search-bar">
-                <input type="text" name="" placeholder="Search books">
-                <div class="search-btn">
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-                </form>
-            </div>
-            <div class="log-s">
-                <a href="signin2.html"></i>Sign In</a>
-            </div>
-            <div class="log-j">
-                <a href="signin2.html"></i>Join</a>
-            </div>
-        </div>
-    </header>
+<body class="bg-white font-roboto">
 
-    <!-- script js -->
-    <script src="js/script.js"></script>
+  <!-- Header -->
+  <header class="bg-[#F7E8D6] h-16">
+    <div class="container mx-auto flex items-center justify-between h-full">
+      
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo library.png" alt="Logo" class="w-40">
+      </div>
+
+      <!-- Navbar -->
+      <nav class="flex items-center gap-6">
+        <a href="index.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all duration-300">Home</a>
+        <a href="signin2.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all">My Books</a>
+
+        <!-- Dropdown -->
+        <div class="dropdown relative">
+          <button onclick="toggleDropdown(this)" class="dropdown-button flex items-center gap-2">
+            Browse <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="book-list flex gap-4 p-4">
+              <div class="list flex flex-col gap-1">
+                <a href="#">Art</a>
+                <a href="#">Biography</a>
+                <a href="#">Business</a>
+                <a href="#">Children's</a>
+                <a href="#">Classics</a>
+                <a href="#">Comics</a>
+                <a href="#">Cookbooks</a>
+                <a href="#">Ebooks</a>
+              </div>
+              <div class="list flex flex-col gap-1">
+                <a href="#">Fantasy</a>
+                <a href="#">Fiction</a>
+                <a href="#">Graphic Novels</a>
+                <a href="#">Historical Fiction</a>
+                <a href="#">History</a>
+                <a href="#">Horror</a>
+                <a href="#">Memoir</a>
+                <a href="#">Music</a>
+              </div>
+              <div class="list flex flex-col gap-1">
+                <a href="#">Mystery</a>
+                <a href="#">Nonfiction</a>
+                <a href="#">Poetry</a>
+                <a href="#">Psychology</a>
+                <a href="#">Romance</a>
+                <a href="#">Science</a>
+                <a href="#">Science Fiction</a>
+                <a href="#">Self Help</a>
+              </div>
+              <div class="list flex flex-col gap-1">
+                <a href="#">Sports</a>
+                <a href="#">Thriller</a>
+                <a href="#">Travel</a>
+                <a href="#">More genres</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <form class="search-bar relative">
+          <input type="text" placeholder="Search books" class="rounded border border-gray-400 px-3 py-2 w-96">
+          <button type="submit" class="absolute right-0 top-0 h-full w-12 text-gray-700 hover:text-gray-400">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+
+        <!-- Sign in / Join -->
+        <a href="signin2.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all">Sign In</a>
+        <a href="signin2.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all">Join</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Script for dropdown -->
+  <script>
+    function toggleDropdown(button) {
+      const dropdown = button.nextElementSibling;
+      dropdown.classList.toggle("show");
+      button.classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
