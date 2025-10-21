@@ -7,10 +7,12 @@
   <link rel="shortcut icon" href="images/apple logo.png" type="image/x-icon">
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisi UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css" rel="stylesheet" type="text/css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/art.css">
+  <!-- style CSS -->
+  <link rel="stylesheet" href="./css/art.css">
 </head>
 <body class="bg-white font-roboto">
 
@@ -25,12 +27,12 @@
 
       <!-- Navbar -->
       <nav class="flex items-center gap-6">
-        <a href="index.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all duration-300">Home</a>
-        <a href="signin2.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all">My Books</a>
+        <a href="index.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all duration-300">Home</a>
+        <a href="signin2.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">My Books</a>
 
         <!-- Dropdown -->
         <div class="dropdown relative">
-          <button onclick="toggleDropdown(this)" class="dropdown-button flex items-center gap-2">
+          <button onclick="toggleDropdown(this)" class="dropdown-button flex items-center gap-2 px-6 py-5 hover:bg-[#47230B] hover:text-white transition-all">
             Browse <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div id="myDropdown" class="dropdown-content">
@@ -78,26 +80,160 @@
         <!-- Search -->
         <form class="search-bar relative">
           <input type="text" placeholder="Search books" class="rounded border border-gray-400 px-3 py-2 w-96">
-          <button type="submit" class="absolute right-0 top-0 h-full w-12 text-gray-700 hover:text-gray-400">
+          <button type="submit" class="absolute right-0 top-0 h-full w-10 text-gray-700 hover:text-gray-400">
             <i class="fa fa-search"></i>
           </button>
         </form>
 
         <!-- Sign in / Join -->
-        <a href="signin2.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all">Sign In</a>
-        <a href="signin2.html" class="px-6 py-5 rounded hover:bg-[#47230B] hover:text-white transition-all">Join</a>
+        <a href="signin2.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">Sign In</a>
+        <a href="signin2.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">Join</a>
+        <a href="signin2.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">WishList</a>
       </nav>
 
     </div>
   </header>
 
-  <!-- Script for dropdown -->
-  <script>
-    function toggleDropdown(button) {
-      const dropdown = button.nextElementSibling;
-      dropdown.classList.toggle("show");
-      button.classList.toggle("open");
-    }
-  </script>
+  <!-- main -->
+   <section class="main">
+    <div class="art-title">
+      <h1 class="title mt-2 text-3xl font-bold mb-2">Art</h1>
+      <p class="mb-2">Books that showcase particular types of art.</p>
+      <h3 class="mb-2 font-bold uppercase">New Releases Tagged "Art"</h3>
+    </div>
+    <hr>
+<!-- Carousel Container -->
+<div class="w-full max-w-5xl mx-auto mt-10 relative p-6 overflow-hidden">
+
+  <!-- Slider -->
+  <div id="slider" class="flex transition-transform duration-700 ease-in-out gap-6">
+    <img src="./images/art img/art-01.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 1">
+    <img src="./images/art img/art-02.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 2">
+    <img src="./images/art img/art-03.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 3">
+    <img src="./images/art img/art-04.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 4">
+    <img src="./images/art img/art-05.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 5">
+    <img src="./images/art img/art-06.webp" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 6">
+    <img src="./images/art img/art-07.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 7">
+    <img src="./images/art img/art-08.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md flex-shrink-0" alt="Book 8">
+  </div>
+
+  <!-- Left Arrow -->
+  <button id="prevBtn"
+    class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#47230B] p-3 rounded-full shadow-md transition hidden">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <!-- Right Arrow -->
+  <button id="nextBtn"
+    class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#47230B] p-3 rounded-full shadow-md transition">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+
+
+
+
+    <!-- <div class="grid grid-cols-3 gap-6 mt-6">
+             Card 1 -->
+            <!-- <div class="bg-white rounded-2xl p-5 shadow hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-500 text-sm">ShopEase</p>
+                <h3 class="text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Debug using Chrome DevTools, check for overlapping
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Deadline <br>
+                        <span class="font-semibold text-black">21 March 2025</span>
+                    </p>
+                    <button class="btn-complete bg-blue-600 text-white text-xs px-3 py-2 rounded-lg cursor-pointer">Completed</button>
+                </div>
+            </div> -->
+
+            <!-- Card 2 -->
+            <!-- <div class="bg-white rounded-2xl p-5 shadow hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-500 text-sm">CloudSync</p>
+                <h3 class="text-lg font-semibold">Add Dark Mode</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Store preference in localStorage, update CSS vars
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Deadline <br>
+                        <span class="font-semibold text-black">21 March 2025</span>
+                    </p>
+                    <button class="btn-complete bg-blue-600 text-white text-xs px-3 py-2 rounded-lg cursor-pointer">Completed</button>
+                </div>
+            </div> -->
+
+            <!-- Card 3 -->
+            <!-- <div class="bg-white rounded-2xl p-5 shadow hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-500 text-sm">SwiftPay</p>
+                <h3 class="text-lg font-semibold">Optimize Home page</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Debug using Chrome DevTools, check for overlapping
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Deadline <br>
+                        <span class="font-semibold text-black">21 March 2025</span>
+                    </p>
+                    <button class="btn-complete bg-blue-600 text-white text-xs px-3 py-2 rounded-lg cursor-pointer">Completed</button>
+                </div>
+            </div> -->
+             <!-- Card 4 -->
+            <!-- <div class="bg-white rounded-2xl p-5 shadow hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-500 text-sm">Meta</p>
+                <h3 class="text-lg font-semibold">Add new emoji 🤲</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Debug using Chrome DevTools, check for overlapping elements..
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Deadline <br>
+                        <span class="font-semibold text-black">21 March 2025</span>
+                    </p>
+                    <button class="btn-complete bg-blue-600 text-white text-xs px-3 py-2 rounded-lg cursor-pointer">Completed</button>
+                </div>
+            </div> -->
+             <!-- Card 5 -->
+            <!-- <div class="bg-white rounded-2xl p-5 shadow hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-500 text-sm">Google LLC</p>
+                <h3 class="text-lg font-semibold">Integrate OpenAI API </h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Debug using Chrome DevTools, check for overlapping
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Deadline <br>
+                        <span class="font-semibold text-black">21 March 2025</span>
+                    </p>
+                    <button class="btn-complete bg-blue-600 text-white text-xs px-3 py-2 rounded-lg cursor-pointer">Completed</button>
+                </div>
+            </div> -->
+             <!-- Card 6 -->
+            <!-- <div class="bg-white rounded-2xl p-5 shadow hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-500 text-sm">Glassdoar</p>
+                <h3 class="text-lg font-semibold">Improve Job searching </h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Debug using Chrome DevTools, check for overlapping
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Deadline <br>
+                        <span class="font-semibold text-black">21 March 2025</span>
+                    </p>
+                    <button class="btn-complete bg-blue-600 text-white text-xs px-3 py-2 rounded-lg cursor-pointer">Completed</button>
+                </div>
+            </div> -->
+            
+
+        </div> 
+
+   </section>
+
+ <!-- script -->
+  <script src="./js/art.js"></script>
 </body>
 </html>
