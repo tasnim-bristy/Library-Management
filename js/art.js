@@ -5,14 +5,14 @@
       button.classList.toggle("open");
     }
 
-
+// carousel
 const slider = document.getElementById("slider");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 
-  const slideWidth = slider.querySelector("img").offsetWidth + 24; // img width + gap
-  const visibleWidth = slider.parentElement.offsetWidth;
-  const totalWidth = slideWidth * slider.children.length;
+const slideWidth = slider.querySelector("img").offsetWidth + 24;
+const visibleWidth = slider.parentElement.offsetWidth;
+const totalWidth = slideWidth * slider.children.length;
   let scrollPosition = 0;
 
   function updateButtons() {
@@ -30,7 +30,7 @@ const slider = document.getElementById("slider");
   }
 
   nextBtn.addEventListener("click", () => {
-    scrollPosition += slideWidth * 2; // scroll 2 books per click
+    scrollPosition += slideWidth * 2; 
     if (scrollPosition + visibleWidth > totalWidth) {
       scrollPosition = totalWidth - visibleWidth;
     }
