@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Books</title>
+  <link rel="shortcut icon" href="images/apple logo.png" type="image/x-icon">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisi UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style CSS -->
+  <link rel="stylesheet" href="./css/navbar.css">
+</head>
+<body class="bg-white font-roboto">
+
+  <!-- Header -->
+  <header class="bg-[#F7E8D6] h-16 sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between h-full">
+      
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo library.png" alt="Logo" class="w-40">
+      </div>
+
+      <!-- Navbar -->
+      <nav class="flex items-center gap-6">
+        <a href="index.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all duration-300">Home</a>
+        <a href="signin2.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">My Books</a>
+
+        <!-- Dropdown -->
+        <div class="dropdown relative">
+          <button onclick="toggleDropdown(this)" class="dropdown-button rounded-none flex items-center gap-2 px-6 py-5 hover:bg-[#47230B] hover:text-white transition-all">
+            Browse <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="book-list flex gap-4 p-4">
+              <div class="list flex flex-col gap-1">
+                <a href="art.html">Art</a>
+                <a href="business.html">Business</a>
+                <a href="#">Children's</a>
+                <a href="#">Classics</a>
+                <a href="#">Comics</a>
+                <a href="#">Cookbooks</a>
+                <a href="#">Ebooks</a>
+                <a href="#">Fantasy</a>
+              </div>
+              <div class="list flex flex-col gap-1">
+                <a href="#">Fiction</a>
+                <a href="#">Thriller</a>
+                <a href="#">Historical Fiction</a>
+                <a href="#">History</a>
+                <a href="#">Horror</a>
+                <a href="#">Memoir</a>
+                <a href="#">Music</a>
+                <a href="#">Mystery</a>
+              </div>
+              <div class="list flex flex-col gap-1">
+                <a href="#">Nonfiction</a>
+                <a href="#">Poetry</a>
+                <a href="#">Psychology</a>
+                <a href="#">Science</a>
+                <a href="#">Science Fiction</a>
+                <a href="travel.html">Travel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <form class="search-bar relative">
+          <input type="text" placeholder="Search books" class="rounded border border-gray-400 px-3 py-2 w-96">
+          <button type="submit" class="absolute right-0 top-0 h-full w-10 text-gray-700 hover:text-gray-400">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+
+        <!-- Sign in / Join -->
+        <a href="signin2.html" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">Sign In</a>
+        <a href="#" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all">Join</a>
+        <a href="#" class="px-5 py-5 hover:bg-[#47230B] hover:text-white transition-all"><i class="fa-solid fa-cart-shopping"></i></a>
+      </nav>
+
+    </div>
+  </header>
+
+    <!-- main -->
+   <section class="main">
+      <div class="art-title">
+        <h1 class="title mt-4 text-3xl font-bold mb-2">Travel</h1>
+        <p class="mb-2">Travel means moving from one place to another to explore new locations, cultures, and experiences. It helps people learn about <br>  the world and connect with others. Travel writing describes these journeys — sometimes real, sometimes imaginary<br> showing the beauty, challenges, and emotions of exploring new places. ✈️🌍</p>
+        <h3 class="mb-4 font-bold uppercase">New Releases Tagged "Travel"</h3>
+      </div>
+      <hr>
+      <!-- Carousel Container -->
+      <div class="w-full max-w-5xl mx-auto mt-6 relative p-6 overflow-hidden">
+
+        <!-- Slider -->
+        <div id="slider" class="flex transition-transform duration-700 ease-in-out gap-6">
+          <img src="./images/travel img/travel-01.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 1">
+          <img src="./images/travel img/travel-02.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 2">
+          <img src="./images/travel img/travel-03.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 3">
+          <img src="./images/travel img/travel-04.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 4">
+          <img src="./images/travel img/travel-05.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 5">
+          <img src="./images/travel img/travel-06.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 6">
+          <img src="./images/travel img/travel-07.jpg" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 7">
+          <img src="./images/travel img/travel-08.avif" class="w-40 md:w-48 lg:w-44 rounded-xl shadow-md cursor-pointer flex-shrink-0 hover:scale-105 transition-transform duration-300" alt="Book 8">
+        </div>
+
+        <!-- Left Arrow -->
+        <button id="prevBtn"
+          class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#47230B] p-3 rounded-full shadow-md transition hidden">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Right Arrow -->
+        <button id="nextBtn"
+          class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#47230B] p-3 rounded-full shadow-md transition">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- all book -->
+      <div class="art-title">
+        <h3 class="mb-2 mt-6 font-bold uppercase">Travel Books</h3>
+        <hr>
+      </div>
+        <div class="grid grid-cols-4 gap-6 mt-6 mb-12">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-09.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Homemade<br>God</h2>
+                <p class="text-gray-500 text-sm mt-1">Rachel Joyce</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover h-full" src="./images/travel img/travel-10.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">Hansel and <br> Gretel</h2>
+                <p class="text-gray-500 text-sm mt-1">Stephen King</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-11.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">Ways <br> of <br>  Seeing</h2>
+                <p class="text-gray-500 text-sm mt-1">John Berger</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-6 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-12.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">Horse</h2>
+                <p class="text-gray-500 text-sm mt-1">Geraldine Brooks</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-13.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">Girl with a Pearl Earring</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover h-full" src="./images/travel img/travel-14.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">Seven Days in the Art World</h2>
+                <p class="text-gray-500 text-sm mt-1">Sarah Thornton</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-15.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">Cat Kid Comic Club</h2>
+                <p class="text-gray-500 text-sm mt-1">Dav Pilkey</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-16.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-17.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-18.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-19.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-20.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 13 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-21.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 14 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg h-full object-cover" src="./images/travel img/travel-22.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 15 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-23.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+          <!-- Card 16 -->
+          <div class="bg-white rounded-2xl p-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300">
+            <!-- Book Image -->
+            <img class="w-20 md:w-24 lg:w-28 rounded-lg object-cover" src="./images/travel img/travel-24.jpg" alt="Book Cover">
+  
+            <!-- Text Section -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h2 class="font-semibold text-lg leading-snug">The Glassmaker</h2>
+                <p class="text-gray-500 text-sm mt-1">Tracy Chevalier</p>
+              </div>
+              <button class="mt-3 bg-[#472309] hover:bg-[#6C2F03] text-white text-xs px-4 py-2 rounded-lg cursor-pointer">Explore</button>
+            </div>
+          </div>
+
+        </div> 
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#EFF1EA] h-[250px]">
+      <div class="max-w-6xl mx-auto px-10">
+        <div class="flex gap-20 pt-[30px]">
+
+      <!-- Company -->
+      <div class="flex flex-col">
+        <h5 class="text-[22px] font-['Roboto'] font-medium uppercase text-[#5B574C] pb-[10px]">Company</h5>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">About us</a>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">Careers</a>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">Terms</a>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">Privacy</a>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">Help</a>
+      </div>
+
+      <!-- Work With Us -->
+      <div class="flex flex-col">
+        <h5 class="text-[22px] font-['Roboto'] font-medium uppercase text-[#5B574C] pb-[10px]">Work With Us</h5>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">Authors</a>
+        <a href="#" class="text-[16px] font-normal font-['Roboto'] pb-[5px] text-black hover:underline">Authors & ads blog</a>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h5 class="text-[22px] font-['Roboto'] font-medium uppercase text-[#5B574C] pb-[10px]">Connect</h5>
+        <div class="flex gap-3">
+          <a href="#" class="w-[40px] h-[40px] rounded-full bg-[#5B574C] flex items-center justify-center text-white text-[18px]">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-[40px] h-[40px] rounded-full bg-[#5B574C] flex items-center justify-center text-white text-[18px]">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="w-[40px] h-[40px] rounded-full bg-[#5B574C] flex items-center justify-center text-white text-[18px]">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="w-[40px] h-[40px] rounded-full bg-[#5B574C] flex items-center justify-center text-white text-[18px]">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-[100px] pl-[200px]">
+        <p class="text-black text-[14px] font-['Roboto']">&copy;2025 BookNest</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</footer>
+
+
+ <!-- script -->
+  <script src="./js/art.js"></script>
+</body>
+</html>
